@@ -3,33 +3,37 @@
 
 /* Create CSS variables at the root of the document to be used throughout the style sheet */
 :root {
-    --sand: #F4DECB
-    --dark-blue: #13293d;
-    /* You can use it with any value that is repeated throughout the sheet */
-    --border-radius: 50px;
+    --box-blue: #92cccd;
+    --header-grey: #31343d;
+    --page-background: #ededf6;
 }
 
 /* Universal Selector */
 * {
     margin: 10px;;
     padding: 10px;;  
-    background-color: #F4DECB
+
     
 }
 /* Elememt selectors */
 
 header {
-    background-color: #94618E ;
+
 }
 .title {
-    text-align:left;
+   float:left;
     font-size:50px;
     font-weight: 50px;
   }
 
-.nav {
-    /* list-style-type: none;}  */
-
+.nav-li {
+list-style: none;
+display: inline;
+padding-right: 15px;
+} 
+ .nav-ul {
+    float: right;
+ }
 img{
     width: auto;
 
