@@ -1,0 +1,36 @@
+
+
+
+/* Create CSS variables at the root of the document to be used throughout the style sheet */
+:root {
+    --sand: #F4DECB
+    --dark-blue: #13293d;
+    /* You can use it with any value that is repeated throughout the sheet */
+    --border-radius: 50px;
+}
+
+/* Universal Selector */
+* {
+    margin: 10px;;
+    padding: 10px;;  
+    background-color: #F4DECB
+    
+}
+/* Elememt selectors */
+
+header {
+    background-color: #94618E ;
+}
+.title {
+    text-align:left;
+    font-size:50px;
+    font-weight: 50px;
+  }
+
+.nav {
+    /* list-style-type: none;}  */
+
+img{
+    width: auto;
+
+}
