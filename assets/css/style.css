@@ -5,33 +5,25 @@
     --page-background: #ededf6;
     --aside-font: #445876;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 10px;
-    ;
-    padding: 10px;
+    color: var(--aside-font);
 }
 
 
-/* Universal Selector */
-/* * { */
-margin: 10px;
-;
-padding: 10px;
-;
-}
 
-/* Elememt selectors */
-
-.header {
+header {
     background-color: var(--header-grey);
 }
 
-header section h1 {
-    background-color: var(--header-grey) ;
+.header-JJ {
+    font-size: 4rem;
+    /* How to make the space behind it blue? */
 }
 
 nav {}
 
-nav ul {}
+nav ul {
+    color: var(--box-blue);
+}
 
 
 .nav-li {
@@ -60,20 +52,12 @@ aside {
     font-weight: 20;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: var(--tronblue);
-    font-weight: 700;
-    line-height: 1.1;
-}
+
+
 
 h1 {
     /* 4rem = 40px (4 * 10px) */
-    font-size: 4rem;
+    /* font-size: 4rem; */
 }
 
 h2 {
