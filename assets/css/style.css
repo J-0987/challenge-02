@@ -6,8 +6,8 @@
     --aside-font: #445876;
     font-family: Arial, Helvetica, sans-serif;
     color: var(--aside-font);
+    
 }
-
 
 
 header {
@@ -19,13 +19,7 @@ header {
     /* How to make the space behind it blue? */
 }
 
-nav {}
-
-nav ul {
-    color: var(--box-blue);
-}
-
-
+/* How to make it go up? */
 .nav-li {
 float: right;
 list-style: none;
@@ -34,8 +28,9 @@ padding-right: 15px;
 color: var(#92cccd);
 }
 
-nav-ul {
-    float: right;
+.cool-subtitle {
+    background-color: blue;
+
 }
 
 img {
@@ -43,6 +38,9 @@ img {
     height:10px
 }
 
+.container {
+    display:flex;
+}
 
 aside {
     width: 30%;
