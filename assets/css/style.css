@@ -1,16 +1,16 @@
-/* Create CSS variables at the root of the document to be used throughout the style sheet */
+/* Create CSS variables at the root of the document to be used throughout the style sheet
+*/
 :root {
     --box-blue: #92cccd;
     --header-grey: #31343d;
     --page-background: #ededf6;
     --aside-font: #445876;
     color: var(--aside-font);
-    
+
 }
 
-/* justify content space between allows the header andn links to align to the sides
-Padding can be adjusted to make the size of the header
-To change the font of the links, I changed the font size in nav-li
+/* Looked up how to anchor the About Me, Contact Me...etc. I have to create an id (#) in each aside title. Match that name in the href " ".
+I think i could have styled the nav-li differently. To explore
 */
 
 header {
@@ -30,13 +30,13 @@ header .titleHeader {
     padding-left: 1%;
 }
 
-
+/* text dec none to remove the line and colour after clicking */
 nav ul li a {
     color: var(--box-blue);
     text-decoration: none;
 }
 
-/* How to make it go up? */
+
 .nav-li {
     font-size: 20px;
     float: right;
@@ -46,14 +46,16 @@ nav ul li a {
     color: var(--box-blue);
 }
 
-/*  LOOK UP BACKGROUND IMAGE */
+/*  LOOK UP BACKGROUND IMAGE
+Used background image. background-position allows the pictured to fully express in the space. It is a game changer.
+*/
 .cool-subtitle {
     display: flex;
     color: var(--box-blue);
     justify-content: right;
     background-image: url("../images/img-header.jpg");
-    background-position:center;
-    font-size:20px;
+    background-position: center;
+    font-size: 20px;
     padding-top: 20px;
     padding-right: 15px;
     padding-bottom: 15px;
@@ -68,6 +70,7 @@ body {
     color: #2d2d2d;
 }
 
+/* space evenly allows the whole container to arrange itself in relation to the parent */
 .container {
     display: flex;
     flex-direction: row;
@@ -75,10 +78,12 @@ body {
     margin: 2%;
     padding: 2%;
 
-
 }
 
-/* this is my first column */
+/* this is my first column. the whole doc is two columns, one on the left, the aside bar, and the right, which is the contact.
+Learned about rem - this helps the text be resopnsive to the page size. 
+Padding is a game changer
+*/
 .sidebar {
     width: 15%;
     border-right: 5px solid var(--header-grey);
@@ -98,19 +103,19 @@ body {
     background-color: var(--box-blue);
     flex-wrap: wrap;
 }
-
+/* Watched a youtube video about VH. Also talked to tutor about it. This can be used better than px to set the height.
+Still experimenting with the difference between justify content, align items, and text-align. */
 .card {
     width: 48%;
-    height: 35vh; 
+    height: 35vh;
     display: flex;
-    /* flex-direction: column; */
     align-items: end;
     padding: 1%;
-    margin:1%;
+    margin: 1%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border:2px solid black;
+    border: 2px solid black;
 }
 
 .main-card {
@@ -118,7 +123,7 @@ body {
     background-image: url(../images/img-surfreport.jpg);
 }
 
-.project-title{
+.project-title {
     background-color: var(--header-grey);
     color: var(--box-blue);
     font-size: 1.5rem;
@@ -126,8 +131,9 @@ body {
     padding: 1%;
     border-color: var(--box-blue);
     border: solid 2px;
-    
-} 
+
+}
+/* Each needed a class because each has a different image */
 .card1 {
     background-image: url(../images/img-calculator.jpg);
 
@@ -147,7 +153,7 @@ body {
 
 }
 
-
+/* This was an interesting teaching from tutor. The way she calcualted 77% */
 .content ol {
     display: flex;
     flex-direction: row;
@@ -155,18 +161,23 @@ body {
     width: 77%;
     list-style: none;
 }
+
 .content a {
-   text-decoration: none;
-   color: #445876;
+    text-decoration: none;
+    color: #445876;
 }
-
+/* The align-items center moved everything really well
+The margin allowed for spacing. Still not sure when exactly to apply align-items. */
 footer {
- display: flex;  
- flex-direction: column; 
- align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
-footer h1,p  {
+
+footer h1,
+p {
     margin: 1%;
 }
+
 /* body style ends here */
