@@ -4,7 +4,6 @@
     --header-grey: #31343d;
     --page-background: #ededf6;
     --aside-font: #445876;
-    font-family: Arial, Helvetica, sans-serif;
     color: var(--aside-font);
     
 }
@@ -24,14 +23,10 @@ header {
     font-size: 30px;
     color: var(--box-blue);
 }
-body {
-    display: flex;
-    flex-direction: column;
-}
+
 
 header .titleHeader {
-    color: var(--box-blue);
-    background-color: whitesmoke;
+    color: whitesmoke;
 }
 
 
@@ -64,50 +59,107 @@ nav ul li a {
 
 }
 
-.column-1 {
-    display: flex;
-    flex-direction: column;
-}
-.column-1 p {
-    display: flex;
-    justify-content: right;
-}
+/* body style starts here */
 
-/* This is to move the Work and About me to the right  */
-.column-1 h1 {
-    padding-left: 30px;
-    font-size: 30px;
-}
-
-.surfReport {
-    background-image: url("../images/img-surfreport.jpg");
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    font-size: 20px;
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: whitesmoke;
-
+    color: #2d2d2d;
 }
 
-.surfReport h3 {
-    font-size: 20px;
-    background-color: whitesmoke;
-
-}
-.surfReport p {
-    font-size: 15px;
-    background-color: whitesmoke;
-
-}
-.surfReport {
+.container {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 2%;
+    padding: 2%;
+
+
 }
 
-.images {
-    
-    width: 120px;
-    height:120px;
+/* this is my first column */
+.sidebar {
+    width: 15%;
+    border-right: 5px solid blue;
+    text-align: right;
+    font-size: 1.5rem;
+}
+
+/* 2nd column */
+.content {
+    width: 77%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#work-container {
+    background-color: aqua;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 48%;
+    height: 35vh; 
+    display: flex;
+    /* flex-direction: column; */
+    align-items: end;
+    padding: 1%;
+    margin:1%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border:2px solid black;
+}
+
+.main-card {
+    width: 97%;
+    background-image: url(../images/img-surfreport.jpg);
+}
+
+.project-title{
+    background-color: rgb(124, 34, 34);
+    color: rgb(30, 28, 29);
+    font-size: 2.5rem;
+} 
+.card1 {
+    background-image: url(../images/img-calculator.jpg);
+
+}
+
+.card2 {
+    background-image: url(../images/img-LED.jpg);
+
+}
+
+.card3 {
+    background-image: url(../images/img-runbuddy.jpg);
+}
+
+.card4 {
+    background-image: url(../images/jj.jpeg);
+
 }
 
 
+.content ol {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 77%;
+    list-style: none;
+}
+.content a {
+   text-decoration: none;
+   color: #445876;
+}
+
+footer {
+ display: flex;  
+ flex-direction: column; 
+ align-items: center;
+
+}
+footer h1,p  {
+    margin: 1%;
+}
+/* body style ends here */
