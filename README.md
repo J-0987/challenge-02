@@ -1,13 +1,13 @@
 # Jasmine's Portfolio
 
 ## Description
-This is my portfolio showcasing my projects over a week in coding! This portfolio is built using HTML and CSS with a focus on applying various styling methods/ to ensure an an accessible landing page. The HTML follows best practices in using semantic HTML, comprehensive tag descriptions and notes in the styling sheet to demonstrate a clear workflow. Creative functionality.
+This is my portfolio showcasing my projects over a week in coding! This portfolio is built using HTML and CSS with a focus on applying various styling methods/ to ensure an an accessible landing page. The HTML follows best practices in using semantic HTML and notes in the styling sheet to demonstrate a clear workflow. Creative functionality was practiced in ensuring links deplyed to appropriate tabs. 
 
 ## Deployed Application URL
-* link1 to deployed page
+* [link1 to deployed page](https://j-0987.github.io/challenge-02/)
 
+![image](https://github.com/J-0987/challenge-02/assets/146461479/e2b2c74b-ff67-49fc-bdab-6637ab057fb7)
 
-[ add a screenshot image of the first page]
 
 ## Technologies 
 *HTML
